@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #EFEDE1;
+  color: #1F2A44;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+::selection {
+  background: #F1DFB8;
+}
+
+.margin-rule-bg {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 27px,
+    #D6D0BE 27px,
+    #D6D0BE 28px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001s !important;
+    transition: none !important;
+  }
+}
